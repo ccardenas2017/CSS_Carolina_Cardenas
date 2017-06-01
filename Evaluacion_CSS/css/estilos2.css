@@ -1,0 +1,162 @@
+body {
+	margin: 20px;
+	background-color: #02010a;
+	color: white;
+	font-family: Dancing_Script;
+}
+header{
+
+	width: 70%;
+  height: 150px;
+	display: block;
+  top: 0;
+	align-content: center;
+	background: #5b7989;
+	color: white;
+	font-family:Dancing_Script;
+  animation: slidein 4s;
+}
+@-webkit-keyframes slidein{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+
+header h1{
+	text-align: left;
+	text-shadow: 2px #02010a;
+	border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border: 0px solid #000000;
+  width: 70%;
+}
+nav {
+  height: 80%;
+	width: 100%;
+}
+ul{
+  list-style-type:none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+li{
+  float: right;
+  display: inline-block;
+	margin: 10px 15px;
+  padding: 15px 10px;
+  height: 100%;
+}
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+	/*clear: both;*/
+  width: 70%;
+  height: 150px;
+  background-color: #c6d5c5;
+  position:relative;
+  bottom:0;
+
+}
+img{
+	width: 25%;
+	height: 150px;
+}
+.contenido{
+width: 70%;
+}
+.contenedor{
+	padding: 10px;
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #d5c75f;
+  width: 70%;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pie {
+	display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction:column;
+	width: 100%;
+}
+
+div [class*="columna"]{
+	display: table-cell;
+	font-family: Dancing_Script;
+	font-size: 1.0em;
+	color:black;
+}
+
+
+.imgResponsiva:nth-child(1) {
+	-webkit-filter:blur(10px);
+	filter:blur(10px);
+}
+
+.imgResponsiva:nth-child(even){
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);}
+
+.imgResponsiva:nth-child(3) {
+	-webkit-filter:sepia(90%);
+	filter:sepia(90%);
+}
+.imgResponsiva2:nth-child(odd){
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);}
+
+.imgResponsiva2:nth-child(2) {
+
+}
+.imgWrapper3 {
+    font-size: 0;
+    text-align: center;
+}
+
+.imgWrapper3 .imgResponsiva {
+    display: inline-block;
+    font-size: inherit;
+}
+
+.imgWrapper3 .imgResponsiva {width: 33.3%; max-width: 250px;}
+
+.imgResponsiva img {
+    height: 200px;
+    width: 100%;
+}
+.imgWrapper3 .imgResponsiva2 {
+    display: inline-block;
+    font-size: inherit;
+}
+
+.imgWrapper3 .imgResponsiva2 {width: 33.3%; max-width: 250px;}
+
+.imgResponsiva2 img {
+    height: 200px;
+    width: 100%;
+}
+
+/* para movil
+breakpoint  {
+max-width: 100%;
+display: inline-block;
+}
+
+/* 4 columnas para grandes dispositivos*/
+/*@media (min-width: 900px) {
+breakpoint  {
+max-width: 15%;
+} */
